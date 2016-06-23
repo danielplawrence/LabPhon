@@ -681,7 +681,7 @@ mod3<-lmer(F2.norm~poly(YOB,2)+JF+(JF|Pseudo)+(1|Word),data=ow,reml=F)
 anova(mod2,mod3)
 
 #Nope! But consistenly lowers AIC
-
+library(lme4)
 #Animated plots for intro
 
 data<-data[!data$frame>20,]
@@ -694,8 +694,8 @@ uw<-uw[!is.na(uw$FolPhon),]
 ow$JF<-unlist(mapply('jf_codes_new',vowel=ow$Vowel,pre=ow$Pre_place,fol=ow$Fol_manner,preseg=ow$PrePhon,folseg=ow$FolSeg))
 uw$JF<-unlist(mapply('jf_codes_new',vowel=uw$Vowel,pre=uw$Pre_place,fol=uw$Fol_place,preseg=uw$PrePhon,folseg=uw$FolSeg))
 
-mod1<-lmer(F2~(ot1+ot2+ot3):YOB+(ot1+ot2+ot3|Pseudo)+(ot1+ot2+ot3|Word),data=ow,control = lmerControl(optimizer="bobyqa"),data=ow, REML=F)
-mod2<-lmer(F1~(ot1+ot2+ot3):YOB+(ot1+ot2+ot3|Pseudo)+(ot1+ot2+ot3|Word),data=ow,control = lmerControl(optimizer="bobyqa"),data=ow, REML=F)
+mod1<-lmer(F2~(ot1+ot2+ot3):YOB+(ot1+ot2+ot3|Pseudo)+(ot1+ot2+ot3|Word),control = lmerControl(optimizer="bobyqa"),data=ow, REML=F)
+mod2<-lmer(F1~(ot1+ot2+ot3):YOB+(ot1+ot2+ot3|Pseudo)+(ot1+ot2+ot3|Word),control = lmerControl(optimizer="bobyqa"),data=ow, REML=F)
 
 
 mod1<-lm(F2~(ot1+ot2+ot3)*YOB,data=ow)
@@ -1182,5 +1182,36 @@ owmoddip<-owdipfinal$model
 #Style + dim1 + dim3
 ggplot(owmoddip@frame,aes(x=YOB,y=predict(owmoddip)))+stat_summary(fun.data='mean_cl_boot')+stat_smooth(method='lm')+theme_bw()+theme(panel.border=element_rect(size=1.5))+ylab('Normalized Euclidean distance')+xlab('Year of Birth (n.s.)')+ggtitle('/o/ Diphthongization (Year of Birth)')+ggsave('/Users/pplsuser/Desktop/Murcia/o_dip_yob.pdf',width=3.5,height=3.5)
 
+################Ploy models for Labphon
+data<-data[!data$frame>20,]
+t <- poly((unique(data$frame)), 4)
+data[,paste("ot", 1:4, sep="")] <- t[data$frame, 1:4]
+data$Age<-ifelse(data$YOB<=1960,"O",ifelse(data$YOB<=1980,"M","Y"))
+ow=data[data$Vowel=="OW1",]
+uw=data[data$Vowel=="UW1",]
+uw<-uw[!is.na(uw$FolPhon),]
+ow$JF<-unlist(mapply('jf_codes_new',vowel=ow$Vowel,pre=ow$Pre_place,fol=ow$Fol_manner,preseg=ow$PrePhon,folseg=ow$FolSeg))
+uw$JF<-unlist(mapply('jf_codes_new',vowel=uw$Vowel,pre=uw$Pre_place,fol=uw$Fol_place,preseg=uw$PrePhon,folseg=uw$FolSeg))
 
+mod1<-lmer(F2~(ot1+ot2+ot3):YOB+(ot1+ot2+ot3|Pseudo)+(ot1+ot2+ot3|Word),control = lmerControl(optimizer="bobyqa"),data=ow, REML=F)
+mod2<-lmer(F1~(ot1+ot2+ot3):YOB+(ot1+ot2+ot3|Pseudo)+(ot1+ot2+ot3|Word),control = lmerControl(optimizer="bobyqa"),data=ow, REML=F)
+
+owgrid<-expand.grid(frame=seq(1,20,1),YOB=seq(1940,2001,1))
+t <- c(unique(ow$frame),poly(unique(ow$frame, 3)))
+owgrid[,paste("ot", 1:3, sep="")] <- poly(owgrid$frame,3)[,1:3]
+owgrid$F2<-predict(mod1,newdata=owgrid,re.form=NA)
+owgrid$F1<-predict(mod2,newdata=owgrid,re.form=NA)
+owgrid$dec<-cut(owgrid$YOB,7)
+
+cbbPalette <- c("#000000", "#009E73", "#e79f00", "#9ad0f3", "#0072B2", "#D55E00", "#CC79A7", "#F0E442")
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+
+mod1<-lmer(F2~(ot1+ot2+ot3)*YOB+(ot1+ot2+ot3)*JF+((ot1+ot2+ot3)|Pseudo),data=ow)
+mod2<-lmer(F1~(ot1+ot2+ot3)*YOB+(ot1+ot2+ot3)*JF+((ot1+ot2+ot3)|Pseudo),data=ow)
+
+ggplot(owgrid,aes(x=frame,y=F2,color=dec))+geom_smooth()
++geom_smooth(aes(y=F1))+scale_color_manual(values=cbbPalette)
++stat_summary(alpha=0.1)+geom_smooth(alpha=0.25,formula=y~poly(x,3),method='lm')+xlab('Year of Birth')+ylab('')+theme_bw()+scale_color_manual(values=cbbPalette,breaks=c('Tow','Kow','ow'))+ggtitle('/o/')+labs(color='')
++ggsave("/Users/pplsuser/Desktop/Second_Year_Report_copy/Presentation/ow_phonetic_env.pdf",width=3.5,height=3.5)
 
