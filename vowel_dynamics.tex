@@ -1,0 +1,145 @@
+\documentclass[a0,final]{a0poster}
+%%%Load packages
+\usepackage{tipa}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[scriptsize]{subfigure}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{natbib}
+\usepackage{ragged2e}
+\usepackage{multicol} 			%3-column layout
+\usepackage[left=3cm,right=3cm,bottom=0cm,top=0cm]{geometry}			%Reset margins
+\usepackage{helvet}				%Load Helvetica font & CM math
+\usepackage{color}				%Needed for colour boxes & coloured text
+\usepackage{graphics}
+\newlength{\mylen}
+\setbox1=\hbox{$\bullet$}\setbox2=\hbox{\small$\bullet$}
+\setlength{\mylen}{\dimexpr0.75\ht1-0.5\ht2}
+\renewcommand\labelitemi{\raisebox{\mylen}{\small$\bullet$}}
+
+%%%Define colours and lengths
+\definecolor{headingcol}{rgb}{1,1,1}	%Colour of main title
+\definecolor{boxcol}{rgb}{0.7,0.2,0.2}		%Edge-colour of box and top banner
+\fboxsep=1cm							%Padding between box and text
+\setlength{\columnsep}{1cm}				%Set spacing between columns
+\renewcommand{\familydefault}{\sfdefault}	%Set main text to sans-serifb
+%%%Format title
+\makeatletter							%Needed to include code in main file
+\renewcommand\@maketitle{%
+\null									%Sets position marker
+{
+\vspace*{8cm}
+\color{headingcol}\sffamily\Huge		%Set title font and colour
+\@title \par}%
+\vskip 1em%
+{
+\color{white}\sffamily\LARGE				%Set author font and colour
+\lineskip .5em%
+\begin{tabular}[t]{l}%
+\@author
+\end{tabular}\par}%
+\vskip 1cm
+\par
+}
+\setlength{\parskip}{0cm}
+\setlength{\parindent}{1em}
+\makeatother
+
+\title{\Huge{Vowel Dynamics and Social Meaning in York, Northern England}}
+
+\author{Daniel Lawrence\\The University of Edinburgh\\\hspace{0.5cm}daniel.lawrence@ed.ac.uk}
+
+\begin{document}
+\hspace{-4cm}								%Align with edge of page, not margin
+\vspace{-2cm}
+\includegraphics{Black_Landscape.pdf}
+
+%\colorbox{boxcol}{							%Coloured banner across top
+\begin{minipage}{1191mm}					%Minipage for title contents
+\vspace{-18cm}
+\maketitle
+\end{minipage}
+%}
+\vspace{.5cm}
+
+\begin{multicols}{4}							%Use 3-column layout
+						%Don't stretch contents vertically
+\section*{Introduction}
+\begin{itemize}
+ \item{As time-varying acoustic events, speech sounds offer a wide range of variable cues which could potentially attach to the social meanings available in a speech community.} 
+
+ \item{However, research into the social perception of phonetic variation has typically focused on `static' properties of speech events -- for example, by testing listeners' ability to use variation in average formant frequencies as a cue to social identity (Fridland, Bartlett \& Kreuz, 2004).} 
+
+ \item{To address this gap, the present study explored listeners' social perceptions of the \textsc{goat} vowel (\textipa{/o/}) in York, Northern England, with a view to discovering \begin{itemize}\item{}how variable patterns of fronting and diphthongization might be available as indexical cues in this community.}
+\end{itemize}
+\section*{Data}
+\begin{itemize}
+\item{52 sociolinguistic interviews conducted in York, Northern England.}
+\item{Social perception data from the same individuals.}
+\end{itemize}
+\vspace*{0.5cm}
+\begin{table}[H]
+\centering
+\begin{tabular}{l|l|l}
+Birth year&Female & Male \\
+1935-1960 &7 &5\\
+ 1961-1980& 8 & 11\\
+1981-2000& 10 &11\\
+\end{tabular}
+  \end{table}
+\section*{Fronting and diphthongization in York}
+\begin{itemize}
+\item{Change in /o/ involves the interaction of fronting and diphthongization}
+\item{Older speakers produced either a back diphthong or back monophthong}
+\item{Younger speakers produce a front diphthong OR a back monophthong}
+\item{A minority of younger speakers front /o/ primarily at the offglide, resulting in an upgliding diphthong}
+\end{itemize}
+\begin{itemize}
+\item{GAM models:}
+\item{F1-F2 trajectory plotted by decade}
+\item{F2 intercepts plotted by YOB}
+\item{F2 slope vs intercept}
+\end{itemize}
+\subsection*{Social factors}
+\begin{itemize}
+\item{Somehow show social factors (trajectory plots?)}
+\end{itemize}
+\columnbreak
+\section*{Experimental design}
+\section*{Social-indexical perception as signal detection}
+\columnbreak
+\section*{Results}
+\section*{Conclusion}
+\subsubsection*{References}
+\vspace*{-.5cm}
+\scriptsize
+\begin{description}
+\item[Campbell-Kibler, K. (2008).]{I'll be the judge of that: Diversity in social perceptions of (ING). \textit{Language in Society}, 37(05), 637-659.}\vspace*{0.2cm}
+
+\item[Campbell-Kibler, K. (2009).]{The nature of sociolinguistic perception. Language Variation and Change, 21(01), 135-156.}
+
+\item[Eckert, P. (2008).]{Variation and the indexical field. \textit{Journal of sociolinguistics}, 12(4), 453-476.}\vspace*{0.2cm}
+
+\item[Fridland, V., Bartlett, K., \& Kreuz, R. (2004).]{Do you hear what I hear? Experimental measurement of the perceptual salience of acoustically manipulated vowel variants by Southern speakers in Memphis, TN. \textit{Language Variation and Change}, 16(01), 1-16.}\vspace*{0.2cm}
+
+\item[Grosvald, M. (2009).]{Interspeaker variation in the extent and perception of long-distance vowel-to-vowel coarticulation. \textit{Journal of Phonetics}, 37(2), 173-188.}
+
+\item[Haddican, B., Foulkes, P., Hughes, V., \& Richards, H. (2013).]{Interaction of social and linguistic constraints on two vowel changes in northern England. \textit{Language Variation and Change}, 25(03), 371-403.}
+
+\item[Levon, E., \& Fox, S. (2014).]{ Social Salience and the Sociolinguistic Monitor A Case Study of ING and TH-fronting in Britain. \textit{Journal of English Linguistics}, 42(3), 185-217.}
+
+\item[Munson, B. (2007).]{The acoustic correlates of perceived masculinity, perceived femininity, and perceived sexual orientation. \textit{Language and Speech}, 50(1), 125-142.}
+
+\item[Purnell, T., Idsardi, W., \& Baugh, J. (1999).]{ Perceptual and phonetic experiments on American English dialect identification. \textit{Journal of Language and Social Psychology}, 18(1), 10-30.}
+
+
+\end{description}
+%\bibliographystyle{plain}
+%\bibliography{halobib}
+
+\end{multicols}
+\end{document}
