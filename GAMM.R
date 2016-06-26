@@ -437,4 +437,80 @@ ggplot(newdata,aes(x=frame,y=F2.fit,color=dec))+geom_smooth()
 #
 ow_mod6 <- gam(F2.norm ~ Pre_place +YOB+s(frame, by=Pre_place)+ te(YOB,frame,by=Pre_place)+te(frame,LogDur)+s(frame, Pseudo, bs="fs"), data=ow)
 compareML(ow_mod5,ow_mod6)
+newdata<-expand.grid(Pre_place=levels(ow$Pre_place),YOB=1935:2005,Pseudo=levels(ow$Pseudo),frame=1:20,LogDur=min(ow$LogDur):max(ow$LogDur))
+newdata$F2.fit<-predict(ow_mod5,newdata=newdata,exclude=c('Pseudo','Word','Pre_place'))
+newdata$dec<-cut(newdata$YOB,8)
+newdata$dur<-cut(newdata$LogDur,4)
+ggplot(newdata,aes(x=frame,y=F2.fit,color=dec))+geom_smooth()
 
+
+ow_mod6 <- gam(F2.norm ~ Pre_place +YOB+s(frame, by=Pre_place)+ te(YOB,frame,by=Pre_place)+s(frame, Pseudo, bs="fs"), data=ow)
+#trying gender
+ow_mod7 <- gam(F2.norm ~ Pre_place +YOB+s(frame, by=Pre_place)+ te(YOB,frame,by=Pre_place)+te(YOB,frame,by=Gender)+s(frame, Pseudo, bs="fs"), data=ow)
+compareML(ow_mod7,ow_mod6)
+
+ow_mod7 <- gam(F2.norm ~ YOB+s(frame, by=Pre_place)+ te(YOB,frame), data=ow)
+ow_mod8 <- gam(F2.norm ~ YOB+dim3+s(frame)+ s(dim3)+te(YOB,frame,by=dim3), data=ow)
+
+
+newdata<-expand.grid(Pre_place=levels(ow$Pre_place),YOB=1935:2005,frame=seq(1,20,by=.1),dim3=-2:2)
+newdata$F2<-predict(ow_mod8,newdata)
+newdata$Dec<-cut(newdata$YOB,8)
+newdata$Mob<-cut(newdata$dim3,3)
+ggplot(newdata,aes(x=frame,y=F2,color=Dec))+stat_summary()+facet_wrap(~Mob)
+
+#I hypothesize that there is an interaction between MOB and decade
+ow$Dec<-cut(ow$YOB,3)
+ow$Mob<-cut(ow$dim3,2)
+ow_null<- gam(F2.norm ~ s(frame),data=ow)
+ow_yob<- gam(F2.norm ~ Dec+s(frame),data=ow)
+compareML(ow_null,ow_yob)
+newdata<-expand.grid(frame=seq(1,20,by=.1),Dec=levels(ow$Dec))
+newdata$F2<-predict(ow_yob,newdata)
+ggplot(newdata,aes(x=frame,y=F2,fill=Dec))+geom_smooth()
+#add a smooth for yob
+ow_yob_sm<- gam(F2.norm ~ Dec+te(frame,by=Dec),data=ow,method='ML')
+compareML(ow_yob_sm,ow_yob)
+newdata<-expand.grid(frame=seq(1,20,by=.1),Dec=levels(ow$Dec))
+newdata$F2<-predict(ow_yob_sm,newdata)
+ggplot(newdata,aes(x=frame,y=F2,fill=Dec))+geom_smooth()
+ggplot(ow,aes(x=frame,y=F2,fill=Mob))+geom_smooth()+facet_wrap(~Dec)+geom_smooth(aes(x=frame,y=F1,fill=Mob))
+
+ow_mob_yob<- gam(F2.norm ~ Dec+Mob+s(frame,by=Dec),data=ow,method='ML')
+compareML(ow_mob_yob,ow_yob_sm)
+ow_mob_yob_sm<- gam(F2.norm ~ Dec+Mob+s(frame,by=Mob)+s(frame,by=Dec),data=ow[ow$Style=='Wordlist',],method='ML')
+compareML(ow_mob_yob,ow_mob_yob_sm)
+newdata<-expand.grid(frame=seq(1,20,by=.1),Dec=levels(ow$Dec),Mob=levels(ow$Mob))
+newdata$F2<-predict(ow_mob_yob_sm,newdata)
+ggplot(newdata,aes(x=frame,y=F2,fill=Mob))+geom_smooth()+facet_wrap(~Dec)
+
+
+ggplot(ow,aes(x=frame,y=F2.norm,fill=Mob))+geom_smooth()+facet_wrap(~Dec)
+
+ow_null<- gam(F2.norm ~ s(frame, Pseudo, bs="fs", m=1),data=ow,method='ML')
+ow_yob<- gam(F2.norm ~ Dec+ s(frame, Pseudo, bs="fs", m=1),data=ow,method='ML')
+
+
+compareML(ow_yob,ow_null)
+
+ow<-ow[ow$Style=='Wordlist',]
+ow_mob_yob_smf2<- gam(F2.norm ~ Dec+Mob+s(frame,by=Mob)+s(frame,by=Dec)+s(frame, Pseudo, bs="fs", m=1),data=ow,method='ML')
+
+
+
+
+ow_mob_yob_smf1<- gam(F1.norm ~ Dec+Mob+s(frame,by=Mob)+s(frame,by=Dec)+s(frame, Pseudo, bs="fs", m=1),data=ow,method='ML')
+
+
+
+newdata<-expand.grid(frame=seq(1,20,by=.1),Dec=levels(ow$Dec),Mob=levels(ow$Mob),Pseudo=levels(ow$Pseudo))
+newdata$F2<-predict(ow_mob_yob_smf2,newdata)
+newdata$F2.se<-predict(ow_mob_yob_smf2,newdata,se.fit=T)$se.fit
+newdata$F1<-predict(ow_mob_yob_smf1,newdata)
+ggplot(newdata,aes(x=frame,y=F2,fill=Mob))+geom_ribbon(aes(ymax=F2+(.5*F2.se),ymin=F2+(.5*F2.se)),linetype='dotted')
++geom_ribbon(aes(y=F2-(.5*F2.se)),,linetype='dotted')+facet_wrap(~Dec)
++geom_ribbon(aes(ymax=F2+(F2.se),ymin=F2-(F2.se),group=Mob))
++geom_ribbon(aes(x=frame,ymax=F2+F2.se,ymin=F2-F2.se,fill=Mob))
++facet_wrap(~Dec)
++geom_smooth(aes(x=frame,y=F1,color=Mob))+facet_wrap(~Dec)
++geom_line(aes(x=frame,y=F1,fill=Mob))+facet_wrap(~Dec)

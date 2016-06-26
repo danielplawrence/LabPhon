@@ -644,7 +644,7 @@ uwsoc<-data[data$Vowel=='UW'&data$Test=='soc',]
 uwsoc$Image_class<-relevel(uwsoc$Image_class,'M')
 uwsoc$Sound<-factor(uwsoc$Sound)
 uwsoc$Variant<-factor(uwsoc$Variant)
-uwsoc<-recontrast(uwsoc)
+
 uwsoc$Variant<-mapply(get_ipa,vowel='GOOSE',variant=uwsoc$Variant)
 uwsoc$Variant<-factor(uwsoc$Variant)
 uwsoc$YOB<-scale(uwsoc$YOB,center=TRUE)
@@ -710,7 +710,7 @@ save(newdata,file='owboot.R')
 save(owmod,file='owmod.R')
 save(bootfit,file='bootfit.R')
 newdata$Prob<-predict(owmod,newdata=newdata,type='response',re.form=NA)
-ggplot(newdata,aes(x=dim3,y=Prob))+geom_line(aes(group=Variant),size=1.5,linetype='dotdash')+geom_ribbon(aes(ymax=Prob+(se),ymin=Prob-(se),fill=factor(Variant,levels=levels(Variant)[c(5,8,6,7,2,1,3,4)])),alpha=0.25)+theme_bw()+scale_fill_brewer(palette='Set1')+guides(fill=guide_legend(title=NULL))+theme_bw()+scale_y_continuous(limits=c(0,1),breaks=seq(0,1,by=0.25))+theme(panel.grid.major = element_line(colour = "#808080"))+ylab('P (WC)')+geom_hline(yintercept=0.5,linetype='dotted')+xlab('Mobility index')+ggtitle('/o/')+theme(panel.border=element_rect(size=1.5,color='black'))+ggsave('/Users/pplsuser/Desktop/Labphon_Posters/o_perception_dim3_sd.pdf',width=3.4,height=3,device=cairo_pdf)
+ggplot(newdata,aes(x=dim3,y=Prob))+geom_line(aes(group=Variant),size=1.5,linetype='dotdash')+geom_ribbon(aes(ymax=Prob+(se),ymin=Prob-(se),fill=factor(Variant,levels=levels(Variant)[c(5,8,6,7,2,1,3,4)])),alpha=0.25)+theme_bw()+scale_fill_brewer(palette='Set1')+guides(fill=guide_legend(title=NULL))+theme_bw()+scale_y_continuous(limits=c(0,1),breaks=seq(0,1,by=0.25))+theme(panel.grid.major = element_line(colour = "#808080"))+ylab('P (WC)')+geom_hline(yintercept=0.5,linetype='dotted')+xlab('Mobility index')+ggtitle('/o/')+theme(panel.border=element_rect(size=1.5,color='black'))+ggsave('/Users/pplsuser/Desktop/Labphon_Posters/o_perception_dim3_sd.pdf',width=3,height=3,device=cairo_pdf)
 se<-function(x,n){
 return(sd(x)/(sqrt(n)))
 }
