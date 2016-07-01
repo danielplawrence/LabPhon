@@ -18,6 +18,7 @@
 \usepackage{graphics}
 \usepackage{float}
 \usepackage[shortlabels]{enumitem}
+\usepackage{wrapfig}
 \floatstyle{plaintop}
 \restylefloat{figure}
 \newlength{\mylen}
@@ -58,9 +59,9 @@
 \author{Daniel Lawrence\\The University of Edinburgh\\\hspace{0.5cm}daniel.lawrence@ed.ac.uk}
 
 \begin{document}
-\hspace{-4cm}								%Align with edge of page, not margin
+\hspace{-6cm}								%Align with edge of page, not margin
 \vspace{-2cm}
-\includegraphics{Black_Landscape.pdf}
+\includegraphics{Black_Landscape_portrait.pdf}
 
 %\colorbox{boxcol}{							%Coloured banner across top
 \begin{minipage}{1191mm}					%Minipage for title contents
@@ -70,13 +71,13 @@
 %}
 \vspace{.5cm}
 
-\begin{multicols*}{4}							%Use 3-column layout
+\begin{multicols*}{3}							%Use 3-column layout
 			\raggedcolumns			%Don't stretch contents vertically
 \section*{Introduction}
 \setlist[enumerate,1]{leftmargin=2.3cm}
 \begin{itemize}
  \item{As time-varying acoustic events, speech sounds offer a wide range of variable cues which could potentially attach to the social meanings available in a speech community.} 
- \item{The present study explores dynamic variation and change in the \textsc{goat} vowel (\textipa{/o/}) in York, Northern England, with a view to discovering:\vspace*{.5cm} \begin{enumerate}[(a)]\item{how dynamic properties of this vowel vary \textbf{in production}.}\vspace*{.5cm}\item{the extent to which this variation is available as a social-indexical cue \textbf{in perception.}}\end{enumerate}}
+ \item{The present study explores dynamic variation and change in the \textsc{goat} vowel (\textipa{\textipa{/o/}}) in York, Northern England, with a view to discovering:\vspace*{.5cm} \begin{enumerate}[(a)]\item{how dynamic properties of this vowel vary \textbf{in production}.}\vspace*{.5cm}\item{the extent to which this variation is available as a social-indexical cue \textbf{in perception.}}\end{enumerate}}
 \end{itemize}
 \vspace{-1cm}
 \section*{Data}
@@ -94,7 +95,7 @@ Birth year&Female & Male \\
 1981-2000& 10 &11\\
 \end{tabular}
   \end{table}
-\section*{/o/ fronting and diphthongization in York}
+\section*{\textipa{/o/} fronting and diphthongization in York}
 \begin{itemize}
 \item{F1/F2/F3 Measurements taken at 20 equidistant points along the vowel trajectory.}
 \item{Generalized Additive Mixed Models fit to F2 trajectories, predicting F2 as a smooth function of time.}
@@ -102,59 +103,63 @@ Birth year&Female & Male \\
 \item{+3 composite variables derived from a factor analysis of interview responses:\begin{itemize}\item{
 mobility index (-2 +2)} \item{regional identity index (-2 +2)} \item{general SES index (-2 +2)}\end{itemize}}
 \end{itemize}
+
+\subsubsection*{(a) Main effect of speaker year of birth}
+\begin{itemize}
+\item{Apparent-time evidence of \textipa{/o/} fronting}
+\end{itemize}
+\vspace*{-1cm}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=2.25]{o_fronting_scurve.pdf}
+\end{figure}
+
+\subsubsection*{(b) Interaction of fronting and diphthongization}
+\vspace*{-1cm}
+\begin{minipage}{0.3\textwidth}
+\begin{figure}[H]
+\includegraphics[scale=2]{o_fronting_dip.pdf}
+\end{figure}
+\end{minipage}
+\hspace*{-9cm}
 \begin{minipage}{0.15\textwidth}
 \raggedright
-\begin{figure}[H]
-\includegraphics[scale=1.6]{o_fronting_scurve.pdf}
-\caption*{\textbf{(a) Main effect of speaker year of birth}}
-\end{figure}
-\end{minipage}
-\hspace*{-5cm}
-\begin{minipage}{0.125\textwidth}
-\vspace*{2cm}
-\begin{itemize}
-\raggedright
-\item{Evidence of ongoing fronting of /o/}
-\item{This change involves:\begin{itemize}\item{A rise in F2 at the offglide across speaker groups}\item{Additional fronting at the vowel midpoint among more mobile speakers, resulting in a greater curvature in the vowel trajectory}\end{itemize}}
-\item{Trajectories of high/low mobility groups have become more distinct over time}
-\end{itemize}
-\end{minipage}
-\begin{figure}[H]
-\includegraphics[scale=1.5]{o_mobility_curve.pdf}
-\caption*{\hspace*{-6cm}\textbf{(b) Interaction of year of birth and mobility index}}
-\end{figure}
-\subsubsection*{(c) Interaction of fronting and diphthongization}
-\begin{minipage}{0.13\textwidth}
-\vspace*{-3cm}
-\begin{figure}[H]
-\includegraphics[scale=1.9]{o_fronting_dip.pdf}
-\end{figure}
-\end{minipage}
-\begin{minipage}{0.12\textwidth}
-\raggedright
-\vspace*{.5cm}
 \begin{itemize}
 \item{Speakers appear to cluster into three groups:\begin{itemize}
-\item{Those with back /o/ realizations, who vary in terms of their trajectory length (red)}
-\item{Those with fairly back, monophthongal realizations (blue)}
-\item{Those with fronted, diphthongal realizations (green)}\end{itemize}}
-\item{Apparent lack of fronted monophthongs consistent with Haddican et al. (2013)}
+\item{Those with back \textipa{/o/} realizations, who vary in terms of their trajectory length (red).}
+\item{Those with fairly back, monophthongal realizations (blue).}
+\item{Those with fronted, diphthongal realizations (green).}\end{itemize}}
 \end{itemize}
 \end{minipage}
-\vspace*{-1cm}
-\section*{Investigating sociolinguistic perception}
-\vspace*{-.5cm}
 \begin{itemize}
-\item{We know that:\begin{itemize}\item{Back /o/ variants are typical of older speakers}\item{Diphthongal variants are typical of more mobile/middle-class speakers}\item{Monopthongal variants are possibly associated with regional identity (Haddican et al., 2013)}\end{itemize}}
+\item{Fronting among monophthongal speakers lags behind that of diphthongal speakers, consistent with Haddican et al. (2013).}
+\end{itemize}
+
+\subsubsection*{(c) Vowel dynamics and mobility}
+\begin{itemize}
+\item{F2 trajectories of high/low mobility speakers have become more distinct:}
+\end{itemize}
+\vspace*{-1cm}
+\begin{figure}[H]
+\hspace*{-1.5cm}
+\includegraphics[scale=1.4]{o_mobility_curve.pdf}
+\end{figure}
+
+\columnbreak
+\section*{Investigating sociolinguistic perception}
+
+\begin{itemize}
+\item{We know that:\begin{itemize}\item{Back \textipa{/o/} variants are typical of older speakers.}\item{Diphthongal variants are typical of more mobile/middle-class speakers.}\item{Monopthongal variants are possibly associated with regional identity (Haddican et al., 2013).}\end{itemize}}
 \item{To what extent are listeners sensitive to these patterns \\ in perception?}
 \end{itemize}
 \vspace*{-1cm}
 \begin{figure}[H]
 \begin{minipage}{0.25\textwidth}
-\raggedright\textit{Figure 2: \textipa{/o/} variants tested}\\
+\raggedright\textit{Figure 2: \textipa{\textipa{/o/}} variants tested}\\
 \vspace*{-0.25cm}
+\small
 \centering
-\footnotesize
+\hspace*{4cm}
 \begin{tabular}{llllll}
 &&&&&\\
                   &           & \textit{Fronting}          &             &                   &\\
@@ -189,99 +194,89 @@ $\underbrace{\rule{7cm}{0pt}{\textit{Social class: Middle/Working}}\rule{5cm}{0p
 \end{minipage}
 \end{figure}
 \vspace*{2cm}
-\begin{minipage}{.23\textwidth}
 \begin{itemize}
 \item{\textbf{Task:} \begin{itemize}\item{Participants are told they are listening to an actor pretending to be one of a set of characters in a TV sitcom set in York.}
 \item{\textbf{Training phase:} Participants sort the images according to questions e.g. `Which character comes from Rural Yorkshire'?}
 \item{\textbf{Testing phase:} Participants see the characters in `minimal pairs', hear a speech token, and select the character which they think the actor is pretending to be.}\end{itemize}}
 \end{itemize}
-\end{minipage}
-\columnbreak
+\vspace*{-1cm}
 \section*{Modeling sociolinguistic perception}
-\begin{minipage}{0.24\textwidth}
 \begin{itemize}
 \item{Strategy: analyze responses for each social dimension separately -- social class (WC/MC), regional identity (Urban/Rural) age (Older/Younger).}
 \item{Responses modeled using hierarchical GLMs with a logit link.}
 \item{Individual-level variability modeled through listener-level intercepts and (variant|listener) random slopes.}
 \item{Parameter estimates obtained through MCMC in \textit{rstanarm} (Gabry \& Goodrich, 2016). Priors were $t$-distributions with 7 degrees of freedom and a scale of 2.5.}
 \end{itemize}
-\end{minipage}
-
+\vspace*{-1cm}
 \section*{Results}
-\begin{minipage}{0.24\textwidth}
 \begin{itemize}
 \item{Plots show the inverse-logit transformed posterior distribution of each parameter, representing the expected probability that each variant will cue a selection on the social dimension labeled on each plot.}
 \item{Where error bars (showing 95$\%$ credible intervals) do not cross zero, there is reliable evidence that the variant impacted listeners' selections.}
 \item{Where the mean of one parameter lies outside the 95$\%$ CI of another, there is evidence that the variants differed from each other in influencing listeners' responses.}
 \end{itemize}
 \vspace*{-1cm}
-\end{minipage}
-\subsubsection*{/o/ variation as an index of social class}
-\vspace*{-1.5cm}
-\begin{minipage}{0.12\textwidth}
-\vspace*{-.5cm}
-\raggedright
-\hspace*{-2.9cm}
+\subsubsection*{\textipa{/o/} variation as an index of social class}
+\begin{minipage}{0.22\textwidth}
+\hspace*{-1cm}
 \includegraphics[scale=2.2]{ow_class_effects.pdf}
 \end{minipage}
-\hspace*{1.2cm}
+\hspace*{-.5cm}
 \begin{minipage}{0.11\textwidth}
-\vspace*{1cm}
 \raggedright
 \begin{itemize}
-\item{Clear effect of diphthongization -- with the exception of the back variant \textipa{[oU]}, diphthongs tend to disfavour `WC' responses}
-\item{Within monophthongs, fronting reduces the probability of a `WC' selection}
-\item{Within diphthongs, fronting increases the probability of a `MC' selection, although less radically}
-\item{Fronting at the offglide is marginally less `MC' than fronting at the vowel midpoint.}
-\item{\textbf{Social perception generally consistent with production}}
+\item{With the exception of the back variant \textipa{[oU]}, diphthongs tend to disfavour `WC' responses.}
+\item{Fronting \textit{reduces} the probability of a `WC' selection for monophthongs.}
+\item{Fronting \textit{increases} the probability of a `MC' selection for diphthongs.}
 \end{itemize}
 \end{minipage}
-\vspace*{-1cm}
-\subsubsection*{/o/ variation as an index of urban/rural identity}
-\begin{minipage}{0.12\textwidth}
-\hspace*{-2.9cm}
-\vspace*{-2.75cm}
+\begin{itemize}
+\item{Fronting at the offglide is marginally less `MC' than fronting at the vowel midpoint.}
+\item{\textbf{Social perception generally consistent with production.}}
+\end{itemize}
+
+\subsubsection*{\textipa{/o/} variation as an index of urban/rural identity}
+\begin{minipage}{0.2\textwidth}
+\hspace*{-1cm}
 \includegraphics[scale=2.2]{ow_rural_effects.pdf}
 \end{minipage}
-\hspace*{1.2cm}
-\begin{minipage}{0.11\textwidth}
-\vspace*{-3cm}
+\hspace*{1cm}
+\begin{minipage}{0.12\textwidth}
 \raggedright
 \begin{itemize}
-\item{Only the most back monophthongs reliably cue a `rural' selection}
-\item{Fronting monophthongs reduces their potential to index `rural'}
-\item{Non-back diphthongs are consistently percieved as less `rural' than monophthongs}
-\item{\textbf{Social perception weakly consistent with production}}
+\item{Only the most back monophthongs reliably cue a `rural' selection.}
+\item{Fronting monophthongs reduces their potential to index `rural'.}
+\item{Non-back diphthongs are consistently perceived as less `rural' than monophthongs.}
 \end{itemize}
 \end{minipage}
-\subsubsection*{/o/ variation as an index of age}
-\vspace*{-3cm}
-\begin{minipage}{0.13\textwidth}
-\hspace*{-1.4cm}
+\begin{itemize}
+\item{\textbf{Social perception weakly consistent with production.}}
+\end{itemize}
+
+\subsubsection*{\textipa{/o/} variation as an index of age}
+\hspace*{-1cm}
+\begin{minipage}{0.2\textwidth}
 \includegraphics[scale=2.2]{ow_age_effects.pdf}
 \end{minipage}
-\hspace*{1.75cm}
-\begin{minipage}{0.1\textwidth}
-\vspace*{1.5cm}
+\hspace*{1.8cm}
+\begin{minipage}{0.12\textwidth}
 \raggedright
 \begin{itemize}
 \item{Only fronted diphthongs are a reliable index of age}
-\item{Diphthongs are more likely to cue `Older' selections than monophthongs, with the exception of the most back monophthongal variants}
-\item{Within both monophthongs and diphthongs, fronting lowers the probability of an `Older' selection}
-\item{Fronting at the offglide of a diphthong sounds less old than fronting at the vowel onset.}
-\item{\textbf{Social perception ONLY PARTIALLY consistent with production}}
+\item{Diphthongs are more likely to cue `Older' selections than monophthongs, with the exception of the most back monophthongal variants.}
+\item{For both monophthongs and diphthongs, fronting lowers the probability of an `Older' selection.}
 \end{itemize}
 \end{minipage}
-\vspace*{-1.75cm}
+\vspace*{0.5cm}
+\begin{itemize}
+\item{\textbf{Social perception ONLY PARTIALLY consistent with production.}}
+\end{itemize}
 \subsubsection*{Evidence of listener variability}
-\vspace*{-.25cm}
-\begin{minipage}{0.13\textwidth}
 \hspace*{-1cm}
+\begin{minipage}{0.2\textwidth}
 \includegraphics[scale=2.2]{o_perception_dim3_sd_main.pdf}
 \end{minipage}
 \hspace*{1.75cm}
-\begin{minipage}{0.1\textwidth}
-\vspace*{-4cm}
+\begin{minipage}{0.12\textwidth}
 \raggedright
 \begin{itemize}
 \item{More mobile listeners are more sensitive to diphthongization as a cue to social class.}
@@ -289,24 +284,20 @@ $\underbrace{\rule{7cm}{0pt}{\textit{Social class: Middle/Working}}\rule{5cm}{0p
 \item{Please see my other poster for similar examples!}
 \end{itemize}
 \end{minipage}
-\vspace*{-2cm}
+\vspace*{-1cm}
 \section*{Conclusion}
-\begin{minipage}{.25\textwidth}
-\vspace*{-.5cm}
+
 \begin{itemize}
-\item{Ongoing fronting and diphthongization of \textipa{/o/} results in a range of dynamic variation.}
-\item{The social interpretation of /o/ variation often reflects the distribution of that variation in production, but not always.}
+\item{The interaction of fronting and diphthongization results in a range of variation in \textipa{/o/}.}
+\item{The social interpretation of \textipa{/o/} variation often reflects the distribution of that variation in production, but not always.}
 \item{In some cases, listeners' perceptual inferences are consistent with production:\begin{itemize}\item{diphthongization and social class.}\item{fronting, age and social class.}\end{itemize}}
-\item{In other cases, there is a mismatch between social perception and production:\begin{itemize}\item{fronted diphthongs heard as `old', but are used almost exclusively by younger speakers.}\end{itemize}}
+\item{In other cases, there is a mismatch between social perception and production:\begin{itemize}\item{fronted diphthongs are heard as `old', but are used almost exclusively by younger speakers.}\end{itemize}}
 \item{A possible interpretation: listeners' social-indexical knowledge is informed by ideologically-structured schemata (e.g. Eckert (2008); Campbell-Kibler (2009), rather than being based primarily on the social distribution of variation in the speech community (e.g. Docherty \& Foulkes, 2014). As a result, social interpretations may reflect the social patterning of variants in production, but may also contrast with them.}
 
-
-
 \end{itemize}
-\end{minipage}
-\vspace*{-1.5cm}
+
 \subsubsection*{References}
-\tiny
+\footnotesize
 \begin{description}
 
 \item[Campbell-Kibler, K. (2009).]{The nature of sociolinguistic perception. Language Variation and Change, 21(01), 135-156.}

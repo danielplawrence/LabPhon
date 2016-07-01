@@ -9,13 +9,13 @@ data[,"LogDur"]<-log(data$Duration)
 data<-data[!data$frame>20,]
 t <- poly((unique(data$YOB)), 3)
 data[,paste("ot", 1:3, sep="")] <- t[data$frame, 1:3]
+data$Edu_bin<-ifelse(data$Part_edu==1|data$Part_edu==2,'LW',ifelse(data$Part_edu==3|data$Part_edu==4,"W","M"))data<-data[!is.na(data$variable),]
 ow<-data[data$Vowel=='OW1',]
 uw<-data[data$Vowel=='UW1',]
 ow$JF<-unlist(mapply('jf_codes_new',vowel=ow$Vowel,pre=ow$Pre_place,fol=ow$Fol_manner,preseg=ow$PrePhon,folseg=ow$FolSeg))
 uw$JF<-unlist(mapply('jf_codes_new',vowel=uw$Vowel,pre=uw$Pre_place,fol=uw$Fol_manner,preseg=uw$PreSeg,folseg=uw$FolSeg))
 uw$JF<-as.factor(uw$JF)
 ow$JF<-as.factor(ow$JF)
-
 #First job -- model effect of phonetic environment
 uw_mod1 <- bam(F2.norm ~ JF + s(frame, by=JF)+ s(frame, Pseudo, bs="fs"k=5), data=uw)
 check_resid(uw_mod1, split_by=c("Pseudo", "JF"))
@@ -100,7 +100,7 @@ ow$Pre_place<-factor(ow$Pre_place)
 ow_mod <- bam(F2.norm ~ JF+ s(frame, by=JF,k=5)+ s(Pseudo, bs="fs", k=5,by=JF), data=ow)
 newdata<-ow_mod$model
 newdata$F2.fit<-fitted(ow_mod)
-ggplot(data=newdata,aes(x=frame,y=F2.fit,color=JF))+geom_smooth()
+ggplot(data=newdatLabphona,aes(x=frame,y=F2.fit,color=JF))+geom_smooth()
 +geom_smooth(aes(x=frame,y=Fit.F2,color=dim3cut))
 ow_mod_style <- bam(F2.norm ~ JF+(dim3*Style)+s(frame, by=JF,k=5)+ s(frame, by=Style,k=5)+s(frame, by=dim3,k=5)+s(Pseudo, bs="fs", k=5,by=JF), data=ow)
 compareML(ow_mod,ow_mod_style)
@@ -514,3 +514,61 @@ ggplot(newdata,aes(x=frame,y=F2,fill=Mob))+geom_ribbon(aes(ymax=F2+(.5*F2.se),ym
 +facet_wrap(~Dec)
 +geom_smooth(aes(x=frame,y=F1,color=Mob))+facet_wrap(~Dec)
 +geom_line(aes(x=frame,y=F1,fill=Mob))+facet_wrap(~Dec)
+
+
+
+#Models for CLS
+
+
+ow1<- gam(F2.norm ~ JF+s(frame,by=JF),data=ow,method='ML')
+ow1.5<-gam(F2.norm ~ JF+YOB+s(frame,by=JF),data=ow,method='ML')
+ow2<- gam(F2.norm ~ JF+YOB+te(frame,YOB,by=JF,k=4),data=ow,method='ML')
+ow3<- gam(F2.norm ~ JF+YOB+Gender+te(frame,YOB,by=JF)+te(frame,YOB,by=Gender),data=ow,method='ML')
+ow4<- gam(F2.norm ~ JF+YOB+Gender+Edu_bin+te(frame,YOB,by=JF)+te(frame,YOB,by=Edu_bin)+te(frame,YOB,by=Gender),data=ow,method='ML')
+
+newdata<-expand.grid(frame=seq(1,20,by=.1),YOB=1935:2000,JF=levels(ow$JF))
+newdata$F2<-predict(ow2,newdata)
+newdata$F2.se<-predict(ow2,newdata,se.fit=T)$se.fit
+newdata<-newdata[newdata$JF!='owF'&newdata$JF!='owL',]
+newdata$JF<-factor(newdata$JF)
+newdata$JF<-factor(newdata$JF,levels=levels(newdata$JF)[c(2,1,3,4)])
+names(newdata)[3]<-'Environment'
+ggplot(newdata[newdata$frame==15,],aes(x=YOB,y=F2,linetype=Environment))+geom_ribbon(aes(ymax=F2+1.96*F2.se,ymin=F2-1.96*F2.se),color='black',alpha=.001)+geom_line(aes(linetype=Environment))+theme_bw()+ylab('F2/S(F2)')+xlab('Year')+theme(legend.title=element_blank(),panel.border=element_rect(size=1.5))+ggtitle('/o/')+ggsave('/Users/pplsuser/Desktop/CLS52AuthorKit/owphoneticconditioning.pdf',width=3,height=2)
+
+uw1<- gam(F2.norm ~ JF+s(frame,by=JF,k=4),data=uw,method='ML')
+uw1.5<-gam(F2.norm ~ JF+YOB+s(frame,by=JF,k=4),data=uw,method='ML')
+uw2<- gam(F2.norm ~ JF+YOB+te(frame,YOB,by=JF,k=4),data=uw,method='ML')
+compareML(uw2,uw1.5)
+
+uwnewdata<-expand.grid(frame=seq(1,20,by=.1),YOB=1935:2000,JF=levels(uw$JF))
+uwnewdata$F2<-predict(uw2,uwnewdata)
+uwnewdata$F2.se<-predict(uw2,uwnewdata,se.fit=T)$se.fit
+uwnewdata$JF<-factor(uwnewdata$JF)
+names(uwnewdata)[3]<-'Environment'
+ggplot(uwnewdata[uwnewdata$frame==15,],aes(x=YOB,y=F2,linetype=Environment))+geom_ribbon(aes(ymax=F2+1.96*F2.se,ymin=F2-1.96*F2.se),color='black',alpha=.001)+geom_line(aes(linetype=Environment))+theme_bw()+ylab('F2/S(F2)')+xlab('Year')+theme(legend.title=element_blank(),panel.border=element_rect(size=1.5))+ylim(c(0.5,1.6))+ggtitle('/u/')+ggsave('/Users/pplsuser/Desktop/CLS52AuthorKit/uwphoneticconditioning.pdf',width=3,height=2)
+
+
+#the role of vowel dynamics -- for harrington
+ow$Mod<-cut(ow$dim3,2)
+ow$Dec<-cut(ow$YOB,3)
+uw$Mod<-cut(uw$dim3,2)
+uw$Dec<-cut(uw$YOB,3)
+ow4<- bam(F2.norm ~ JF + Dec+Mod+s(frame, by=JF)+s(frame,by=Dec)+s(frame,by=Mod), data=ow)
+newdata<-expand.grid(frame=seq(1,20,by=.1),JF=levels(ow$JF),Mod=levels(ow$Mod),Dec=levels(ow$Dec))
+newdata$F2<-predict(ow4,newdata)
+newdata$F2.se<-predict(ow4,newdata,se.fit=T)$se.fit
+newdata$Dec<-cut(newdata$YOB,3)
+levels(newdata$Mod)<-c('Lower mobility','Higher mobility')
+levels(newdata$Dec)<-c('1935-1960','1961-1980','1981-2000')
+ggplot()+geom_line(data=newdata[newdata$JF=='ow',],aes(x=frame,y=F2,color=Mod,group=Mod,stat='smooth',method='loess',linetype=Mod))+geom_ribbon(data=newdata[newdata$JF=='ow',],aes(x=frame,ymax=F2+1.96*F2.se,ymin=F2-1.96*F2.se,color=Mod),alpha=.001)+facet_wrap(~Dec)+theme_bw()+theme(legend.title=element_blank(),panel.border=element_rect(color='black',size=1.5),strip.background=element_rect(color='black',fill='white',size=1.5))+xlab('Measurement point')+ylab('Normalized F2')+ggtitle('/o/ F2 Dynamics (SES)')+scale_color_manual(values=c('#377eb8','#000000'))+guides(color = guide_legend(reverse=TRUE),linetype = guide_legend(reverse=TRUE))+ggsave('/Users/pplsuser/Desktop/Labphon_posters/owdynamicsclassh.pdf',height=3.25,width=7.5)
+
+uw2<- bam(F2.norm ~ JF + Dec+s(frame, by=JF)+s(frame,by=Dec), data=uw)
+uw4<- bam(F2.norm ~ JF + Dec+Mod+s(frame, by=JF)+s(frame,by=Dec)+s(frame,by=Mod), data=uw)
+uw$Pseudo<-factor(uw$Pseudo)
+uwnewdata<-expand.grid(frame=seq(1,20,by=.1),JF=levels(uw$JF),Mod=levels(uw$Mod),Dec=levels(uw$Dec))
+uwnewdata$F2<-predict(uw4,uwnewdata,exclude='Pseudo')
+uwnewdata$F2.se<-predict(uw4,uwnewdata,se.fit=T,exclude='Pseudo')$se.fit
+uwnewdata$Dec<-cut(uwnewdata$YOB,3)
+levels(uwnewdata$Mod)<-c('Lower mobility','Higher mobility')
+levels(uwnewdata$Dec)<-c('1935-1960','1961-1980','1981-2000')
+ggplot()+geom_line(data=uwnewdata[uwnewdata$JF=='Kuw',],aes(x=frame,y=F2,color=Mod,group=Mod,stat='smooth',method='loess',linetype=Mod))+geom_ribbon(data=uwnewdata[uwnewdata$JF=='Kuw',],aes(x=frame,ymax=F2+1.96*F2.se,ymin=F2-1.96*F2.se,color=Mod),alpha=.001)+facet_wrap(~Dec)+theme_bw()+scale_color_grey(start=0.5,end=0.1)+theme(legend.title=element_blank(),panel.border=element_rect(color='black',size=1.5),strip.background=element_rect(color='black',fill='white',size=1.5))+xlab('Measurement point')+ylab('F2/S(F2)')+ggtitle('/u/')+guides(color = guide_legend(reverse=TRUE),linetype = guide_legend(reverse=TRUE))+ggsave('/Users/pplsuser/Desktop/CLS52AuthorKit/uwdynamicsclass.pdf',height=3,width=7)

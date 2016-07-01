@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  27 JUN 2016 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  1 JUL 2016 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**vowel_dynamics
-(./vowel_dynamics.tex
+**harrington_poster_portriat
+(./harrington_poster_portriat.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/a0poster/a0poster.cls
@@ -29,6 +29,7 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \ykoord=\count88
 \xscale=\count89
 \yscale=\count90
+\tausch=\dimen103
 \Ausgabe=\write3
 \openout3 = `a0header.ps'.
 
@@ -40,7 +41,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 229.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 229.
-\big@size=\dimen103
+\big@size=\dimen104
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/tipa.sty
 Package: tipa 2002/08/08 TIPA version 1.1
@@ -66,11 +67,11 @@ Package: amstext 2000/06/29 v2.01
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
-\ex@=\dimen104
+\ex@=\dimen105
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen105
+\pmbraise@=\dimen106
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -87,7 +88,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen106
+\big@size=\dimen107
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count96
@@ -100,12 +101,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count101
 \maxfields@=\count102
 \andhelp@=\toks16
-\eqnshift@=\dimen107
-\alignsep@=\dimen108
-\tagshift@=\dimen109
-\tagwidth@=\dimen110
-\totwidth@=\dimen111
-\lineht@=\dimen112
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
 \@envbody=\toks17
 \multlinegap=\skip44
 \multlinetaggap=\skip45
@@ -146,8 +147,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count103
 ))
-\Gin@req@height=\dimen113
-\Gin@req@width=\dimen114
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -161,9 +162,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip46
 \subfigcapskip=\skip47
-\subfigcaptopadj=\dimen115
+\subfigcaptopadj=\dimen116
 \subfigbottomskip=\skip48
-\subfigcapmargin=\dimen116
+\subfigcapmargin=\dimen117
 \subfiglabelskip=\skip49
 \c@subfigure=\count105
 \c@lofdepth=\count106
@@ -183,20 +184,20 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen117
-\captionmargin@=\dimen118
-\captionwidth=\dimen119
-\caption@tempdima=\dimen120
-\caption@indent=\dimen121
-\caption@parindent=\dimen122
-\caption@hangindent=\dimen123
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@tempdima=\dimen121
+\caption@indent=\dimen122
+\caption@parindent=\dimen123
+\caption@hangindent=\dimen124
 )
 \c@ContinuedFloat=\count109
 Package caption Info: float package is loaded.
 Package caption Info: subfigure package is loaded.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen124
+\bigstrutjot=\dimen125
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -238,21 +239,21 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \c@tracingmulticols=\count111
 \mult@box=\box30
-\multicol@leftmargin=\dimen125
+\multicol@leftmargin=\dimen126
 \c@unbalance=\count112
 \c@collectmore=\count113
 \doublecol@number=\count114
 \multicoltolerance=\count115
 \multicolpretolerance=\count116
-\full@width=\dimen126
-\page@free=\dimen127
-\premulticols=\dimen128
-\postmulticols=\dimen129
+\full@width=\dimen127
+\page@free=\dimen128
+\premulticols=\dimen129
+\postmulticols=\dimen130
 \multicolsep=\skip68
 \multicolbaselineskip=\skip69
 \partial@page=\box31
 \last@line=\box32
-\maxbalancingoverflow=\dimen130
+\maxbalancingoverflow=\dimen131
 \mult@rightbox=\box33
 \mult@grightbox=\box34
 \mult@gfirstbox=\box35
@@ -276,9 +277,9 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \@tempa=\box53
 \c@columnbadness=\count117
 \c@finalcolumnbadness=\count118
-\last@try=\dimen131
-\multicolovershoot=\dimen132
-\multicolundershoot=\dimen133
+\last@try=\dimen132
+\multicolovershoot=\dimen133
+\multicolundershoot=\dimen134
 \mult@nat@firstbox=\box54
 \colbreak@box=\box55
 \mc@col@check@num=\count119
@@ -300,70 +301,60 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count120
 \Gm@cntv=\count121
 \c@Gm@tempcnt=\count122
-\Gm@bindingoffset=\dimen134
-\Gm@wd@mp=\dimen135
-\Gm@odd@mp=\dimen136
-\Gm@even@mp=\dimen137
-\Gm@layoutwidth=\dimen138
-\Gm@layoutheight=\dimen139
-\Gm@layouthoffset=\dimen140
-\Gm@layoutvoffset=\dimen141
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks23
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip70
-\enit@outerparindent=\dimen142
-\enit@toks=\toks24
-\enit@inbox=\box56
-\enitdp@description=\count123
-)
-\@float@every@figure=\toks25
-\mylen=\skip71
+\mylen=\skip70
 
-(./vowel_dynamics.aux)
-\openout1 = `vowel_dynamics.aux'.
+No file harrington_poster_portriat.aux.
+\openout1 = `harrington_poster_portriat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 60.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 56.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 56.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 60.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 56.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
+\scratchcounter=\count123
 \scratchdimen=\dimen143
-\scratchbox=\box57
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count127
+\scratchbox=\box56
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count126
 \MPscratchDim=\dimen144
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
+\everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -412,7 +403,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 60.
+LaTeX Info: Redefining \selectfont on input line 56.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -422,12 +413,12 @@ LaTeX Info: Redefining \selectfont on input line 60.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 3210.04013pt, 85.35826pt)
-* v-part:(T,H,B)=(0.0pt, 2388.89357pt, 0.0pt)
-* \paperwidth=3380.75665pt
-* \paperheight=2388.89357pt
-* \textwidth=3210.04013pt
-* \textheight=2388.89357pt
+* h-part:(L,W,R)=(85.35826pt, 2218.17705pt, 85.35826pt)
+* v-part:(T,H,B)=(0.0pt, 3380.75665pt, 0.0pt)
+* \paperwidth=2388.89357pt
+* \paperheight=3380.75665pt
+* \textwidth=2218.17705pt
+* \textheight=3380.75665pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
 * \topmargin=-72.26999pt
@@ -452,248 +443,308 @@ LaTeX Info: Redefining \selectfont on input line 60.
 File: Black_Landscape.pdf Graphic file (type pdf)
 
 <use Black_Landscape.pdf>
-Package pdftex.def Info: Black_Landscape.pdf used on input line 63.
+Package pdftex.def Info: Black_Landscape.pdf used on input line 59.
 (pdftex.def)             Requested size: 3398.90686pt x 331.80934pt.
 
-Overfull \hbox (103.15111pt too wide) in paragraph at lines 61--64
+Overfull \hbox (1095.01419pt too wide) in paragraph at lines 57--60
 []  [] 
  []
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <43> not available
-(Font)              size <24.88> substituted on input line 68.
+(Font)              size <24.88> substituted on input line 64.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <35.83> not available
-(Font)              size <24.88> substituted on input line 68.
+(Font)              size <24.88> substituted on input line 64.
 
 
-Overfull \hbox (201.50395pt too wide) in paragraph at lines 66--72
+Overfull \hbox (1193.36703pt too wide) in paragraph at lines 62--68
 []$[]$
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <35.83> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 75.
-LaTeX Font Info:    Try loading font information for T3+phv on input line 79.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 73.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <24.88> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 82.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <29.86> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 89.
+<u_fronting_yob.pdf, id=2, 216.81pt x 216.81pt>
+File: u_fronting_yob.pdf Graphic file (type pdf)
+ <use u_fronting_yob.pdf>
+Package pdftex.def Info: u_fronting_yob.pdf used on input line 134.
+(pdftex.def)             Requested size: 357.73428pt x 357.73428pt.
+
+<o_fronting_yob.pdf, id=3, 216.81pt x 216.81pt>
+File: o_fronting_yob.pdf Graphic file (type pdf)
+ <use o_fronting_yob.pdf>
+Package pdftex.def Info: o_fronting_yob.pdf used on input line 134.
+(pdftex.def)             Requested size: 357.73428pt x 357.73428pt.
+
+<u_dip_yob.pdf, id=4, 216.81pt x 216.81pt>
+File: u_dip_yob.pdf Graphic file (type pdf)
+ <use u_dip_yob.pdf>
+Package pdftex.def Info: u_dip_yob.pdf used on input line 135.
+(pdftex.def)             Requested size: 357.73428pt x 357.73428pt.
+
+<o_dip_soc.pdf, id=5, 216.81pt x 216.81pt>
+File: o_dip_soc.pdf Graphic file (type pdf)
+ <use o_dip_soc.pdf>
+Package pdftex.def Info: o_dip_soc.pdf used on input line 135.
+(pdftex.def)             Requested size: 357.73428pt x 357.73428pt.
+
+Overfull \hbox (182.26387pt too wide) in paragraph at lines 134--136
+ [][][] 
+ []
+
+
+Overfull \hbox (182.26387pt too wide) in paragraph at lines 134--136
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for T3+phv on input line 147.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3phv.fd
 File: t3phv.fd 2001/12/31 scalable TIPA font definitions
 )
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 79.
-
-<o_fronting_scurve.pdf, id=2, 216.81pt x 216.81pt>
-File: o_fronting_scurve.pdf Graphic file (type pdf)
- <use o_fronting_scurve.pdf>
-Package pdftex.def Info: o_fronting_scurve.pdf used on input line 108.
-(pdftex.def)             Requested size: 346.89645pt x 346.89645pt.
-
-<o_mobility_curve.pdf, id=3, 650.43pt x 216.81pt>
-File: o_mobility_curve.pdf Graphic file (type pdf)
- <use o_mobility_curve.pdf>
-Package pdftex.def Info: o_mobility_curve.pdf used on input line 123.
-(pdftex.def)             Requested size: 975.64261pt x 325.21419pt.
-
-Overfull \hbox (194.47214pt too wide) in paragraph at lines 123--124
-[][] 
- []
-
-<o_fronting_dip.pdf, id=4, 216.81pt x 216.81pt>
-File: o_fronting_dip.pdf Graphic file (type pdf)
- <use o_fronting_dip.pdf>
-Package pdftex.def Info: o_fronting_dip.pdf used on input line 130.
-(pdftex.def)             Requested size: 411.93665pt x 411.93665pt.
-
-Overfull \hbox (26.61407pt too wide) in paragraph at lines 127--145
-$[]$ $[]$
- []
-
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <24.88> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 154.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <17.28> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 160.
-
-Overfull \vbox (104.05817pt too high) detected at line 162
+Overfull \vbox (17.04724pt too high) detected at line 154
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <43> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 163.
-<M_O_MC_L_1.png, id=5, 243.60674pt x 243.60674pt>
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 157.
+
+Overfull \hbox (63.12396pt too wide) in paragraph at lines 150--163
+ [][] 
+ []
+
+
+Overfull \vbox (17.04724pt too high) detected at line 173
+ []
+
+
+Overfull \hbox (81.01138pt too wide) in paragraph at lines 169--183
+ [][] 
+ []
+
+<M_O_MC_L_1.png, id=6, 243.60674pt x 243.60674pt>
 File: M_O_MC_L_1.png Graphic file (type png)
  <use M_O_MC_L_1.png>
-Package pdftex.def Info: M_O_MC_L_1.png used on input line 180.
-(pdftex.def)             Requested size: 146.16516pt x 146.16516pt.
+Package pdftex.def Info: M_O_MC_L_1.png used on input line 191.
+(pdftex.def)             Requested size: 170.52353pt x 170.52353pt.
 
-<M_Y_MC_L_1.png, id=7, 243.60674pt x 243.60674pt>
+<M_Y_MC_L_1.png, id=8, 243.60674pt x 243.60674pt>
 File: M_Y_MC_L_1.png Graphic file (type png)
  <use M_Y_MC_L_1.png>
-Package pdftex.def Info: M_Y_MC_L_1.png used on input line 180.
-(pdftex.def)             Requested size: 146.16516pt x 146.16516pt.
+Package pdftex.def Info: M_Y_MC_L_1.png used on input line 191.
+(pdftex.def)             Requested size: 170.52353pt x 170.52353pt.
 
-<M_O_WC_L_1.png, id=8, 243.60674pt x 243.60674pt>
+<M_O_WC_L_1.png, id=9, 243.60674pt x 243.60674pt>
 File: M_O_WC_L_1.png Graphic file (type png)
  <use M_O_WC_L_1.png>
-Package pdftex.def Info: M_O_WC_L_1.png used on input line 180.
-(pdftex.def)             Requested size: 146.16516pt x 146.16516pt.
+Package pdftex.def Info: M_O_WC_L_1.png used on input line 191.
+(pdftex.def)             Requested size: 170.52353pt x 170.52353pt.
 
-<M_Y_WC_L_1.png, id=9, 243.60674pt x 243.60674pt>
+<M_Y_WC_L_1.png, id=10, 243.60674pt x 243.60674pt>
 File: M_Y_WC_L_1.png Graphic file (type png)
  <use M_Y_WC_L_1.png>
-Package pdftex.def Info: M_Y_WC_L_1.png used on input line 180.
-(pdftex.def)             Requested size: 146.16516pt x 146.16516pt.
+Package pdftex.def Info: M_Y_WC_L_1.png used on input line 191.
+(pdftex.def)             Requested size: 170.52353pt x 170.52353pt.
 
-<M_O_MC_NL_1.png, id=10, 243.60674pt x 243.60674pt>
+<M_O_MC_NL_1.png, id=11, 243.60674pt x 243.60674pt>
 File: M_O_MC_NL_1.png Graphic file (type png)
  <use M_O_MC_NL_1.png>
-Package pdftex.def Info: M_O_MC_NL_1.png used on input line 182.
-(pdftex.def)             Requested size: 146.16516pt x 146.16516pt.
+Package pdftex.def Info: M_O_MC_NL_1.png used on input line 193.
+(pdftex.def)             Requested size: 170.52353pt x 170.52353pt.
 
-<M_Y_MC_NL_1.png, id=11, 243.60674pt x 243.60674pt>
+<M_Y_MC_NL_1.png, id=12, 243.60674pt x 243.60674pt>
 File: M_Y_MC_NL_1.png Graphic file (type png)
  <use M_Y_MC_NL_1.png>
-Package pdftex.def Info: M_Y_MC_NL_1.png used on input line 182.
-(pdftex.def)             Requested size: 146.16516pt x 146.16516pt.
+Package pdftex.def Info: M_Y_MC_NL_1.png used on input line 193.
+(pdftex.def)             Requested size: 170.52353pt x 170.52353pt.
 
-<M_O_WC_NL_1.png, id=12, 243.60674pt x 243.60674pt>
+<M_O_WC_NL_1.png, id=13, 243.60674pt x 243.60674pt>
 File: M_O_WC_NL_1.png Graphic file (type png)
  <use M_O_WC_NL_1.png>
-Package pdftex.def Info: M_O_WC_NL_1.png used on input line 182.
-(pdftex.def)             Requested size: 146.16516pt x 146.16516pt.
+Package pdftex.def Info: M_O_WC_NL_1.png used on input line 193.
+(pdftex.def)             Requested size: 170.52353pt x 170.52353pt.
 
-<M_Y_WC_NL_1.png, id=13, 243.60674pt x 243.60674pt>
+<M_Y_WC_NL_1.png, id=14, 243.60674pt x 243.60674pt>
 File: M_Y_WC_NL_1.png Graphic file (type png)
  <use M_Y_WC_NL_1.png>
-Package pdftex.def Info: M_Y_WC_NL_1.png used on input line 182.
-(pdftex.def)             Requested size: 146.16516pt x 146.16516pt.
-
-Overfull \hbox (21.33955pt too wide) in paragraph at lines 153--190
-[]$[]$
- []
-
-<ow_class_effects.pdf, id=14, 252.945pt x 216.81pt>
-File: ow_class_effects.pdf Graphic file (type pdf)
- <use ow_class_effects.pdf>
-Package pdftex.def Info: ow_class_effects.pdf used on input line 225.
-(pdftex.def)             Requested size: 556.47687pt x 476.98015pt.
-
-Overfull \hbox (94.04945pt too wide) in paragraph at lines 224--226
-[]|  []  
- []
+Package pdftex.def Info: M_Y_WC_NL_1.png used on input line 193.
+(pdftex.def)             Requested size: 170.52353pt x 170.52353pt.
 
 
-Overfull \hbox (1.81732pt too wide) in paragraph at lines 221--240
-$[]$ |  $[]$
- []
+! LaTeX Error: \begin{minipage} on input line 184 ended by \end{sub}.
 
-<ow_rural_effects.pdf, id=15, 252.945pt x 216.81pt>
-File: ow_rural_effects.pdf Graphic file (type pdf)
- <use ow_rural_effects.pdf>
-Package pdftex.def Info: ow_rural_effects.pdf used on input line 244.
-(pdftex.def)             Requested size: 556.47687pt x 476.98015pt.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \end{sub}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-Overfull \hbox (94.04945pt too wide) in paragraph at lines 242--245
-[]|  [] 
+
+Overfull \hbox (238.785pt too wide) in paragraph at lines 190--201
+[][]
  []
 
 
-Overfull \hbox (1.81732pt too wide) in paragraph at lines 241--257
-$[]$ |  $[]$ 
- []
+Underfull \hbox (badness 10000) in paragraph at lines 190--201
 
-<ow_age_effects.pdf, id=16, 252.945pt x 216.81pt>
-File: ow_age_effects.pdf Graphic file (type pdf)
- <use ow_age_effects.pdf>
-Package pdftex.def Info: ow_age_effects.pdf used on input line 261.
-(pdftex.def)             Requested size: 556.47687pt x 476.98015pt.
-
-Overfull \hbox (104.59685pt too wide) in paragraph at lines 260--262
-[]|  [] 
  []
 
 
-Overfull \hbox (17.5154pt too wide) in paragraph at lines 259--276
-$[]$ |  $[]$
+Overfull \hbox (21.33955pt too wide) in paragraph at lines 145--201
+[]$[]$ 
  []
 
-<o_perception_dim3_sd_main.pdf, id=17, 252.945pt x 234.8775pt>
-File: o_perception_dim3_sd_main.pdf Graphic file (type pdf)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 204.
 
-<use o_perception_dim3_sd_main.pdf>
-Package pdftex.def Info: o_perception_dim3_sd_main.pdf used on input line 280.
-(pdftex.def)             Requested size: 556.47687pt x 516.7285pt.
-
-Overfull \hbox (115.97778pt too wide) in paragraph at lines 279--281
-[]|  [] 
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]\OT1/phv/m/n/24.88 Individual-level vari-abil-ity mod-elled
  []
 
 
-Overfull \hbox (17.5154pt too wide) in paragraph at lines 278--293
-$[]$ |  $[]$
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\OT1/phv/m/n/24.88 through un-cor-re-lated ran-dom slopes
+ []
+
+<u_fronting_perception_class.pdf, id=15, 180.675pt x 180.675pt>
+File: u_fronting_perception_class.pdf Graphic file (type pdf)
+
+<use u_fronting_perception_class.pdf>
+Package pdftex.def Info: u_fronting_perception_class.pdf used on input line 216
+.
+(pdftex.def)             Requested size: 406.51772pt x 406.51772pt.
+
+<o_fronting_perception_class.pdf, id=16, 162.6075pt x 180.675pt>
+File: o_fronting_perception_class.pdf Graphic file (type pdf)
+
+<use o_fronting_perception_class.pdf>
+Package pdftex.def Info: o_fronting_perception_class.pdf used on input line 217
+.
+(pdftex.def)             Requested size: 365.86597pt x 406.51772pt.
+
+<u_clust.pdf, id=17, 289.08pt x 180.675pt>
+File: u_clust.pdf Graphic file (type pdf)
+ <use u_clust.pdf>
+Package pdftex.def Info: u_clust.pdf used on input line 230.
+(pdftex.def)             Requested size: 563.70372pt x 352.3148pt.
+
+<o_clust.pdf, id=18, 289.08pt x 180.675pt>
+File: o_clust.pdf Graphic file (type pdf)
+ <use o_clust.pdf>
+Package pdftex.def Info: o_clust.pdf used on input line 231.
+(pdftex.def)             Requested size: 563.70372pt x 352.3148pt.
+
+Overfull \hbox (30.49902pt too wide) in paragraph at lines 230--232
+ [][] 
  []
 
 
-Overfull \hbox (21.33955pt too wide) in paragraph at lines 294--308
-$[]$
+Overfull \hbox (30.49902pt too wide) in paragraph at lines 230--232
+ [] 
  []
 
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 312.
-[1
+<u_perception_age_sd.pdf, id=19, 178.6675pt x 216.81pt>
+File: u_perception_age_sd.pdf Graphic file (type pdf)
+
+<use u_perception_age_sd.pdf>
+Package pdftex.def Info: u_perception_age_sd.pdf used on input line 250.
+(pdftex.def)             Requested size: 357.3341pt x 433.61893pt.
+
+<u_perception_dim3_sd.pdf, id=20, 216.81pt x 216.81pt>
+File: u_perception_dim3_sd.pdf Graphic file (type pdf)
+
+<use u_perception_dim3_sd.pdf>
+Package pdftex.def Info: u_perception_dim3_sd.pdf used on input line 251.
+(pdftex.def)             Requested size: 433.61893pt x 433.61893pt.
+
+Overfull \hbox (225.61829pt too wide) in paragraph at lines 249--253
+|  [] []
+ []
+
+<o_perception_dim3_sd.pdf, id=21, 216.81pt x 216.81pt>
+File: o_perception_dim3_sd.pdf Graphic file (type pdf)
+
+<use o_perception_dim3_sd.pdf>
+Package pdftex.def Info: o_perception_dim3_sd.pdf used on input line 255.
+(pdftex.def)             Requested size: 433.61893pt x 433.61893pt.
+
+Overfull \hbox (29.80016pt too wide) in paragraph at lines 261--261
+[]\OT1/phv/m/n/24.88 ...quite a lot in terms of the strength/consistency
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 272.
+
+! LaTeX Error: \begin{figure} on input line 144 ended by \end{multicols}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.295 \end{multicols}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.295 \end{multicols}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/upd
-map/pdftex.map} <./Black_Landscape.pdf> <./o_fronting_scurve.pdf> <./o_mobility
-_curve.pdf
+! LaTeX Error: \begin{multicols} on input line 69 ended by \end{document}.
 
-pdfTeX warning: pdflatex (file ./o_mobility_curve.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./o_fronting_dip.pdf> <./M_O_MC_L_1.png> <./M_Y_MC_L_1.png> <./M_O_WC_L_1.pn
-g> <./M_Y_WC_L_1.png> <./M_O_MC_NL_1.png> <./M_Y_MC_NL_1.png> <./M_O_WC_NL_1.pn
-g> <./M_Y_WC_NL_1.png> <./ow_class_effects.pdf
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.296 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-pdfTeX warning: pdflatex (file ./ow_class_effects.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./ow_rural_effects.pdf
-
-pdfTeX warning: pdflatex (file ./ow_rural_effects.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./ow_age_effects.pdf
-
-pdfTeX warning: pdflatex (file ./ow_age_effects.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
-> <./o_perception_dim3_sd_main.pdf
-
-pdfTeX warning: pdflatex (file ./o_perception_dim3_sd_main.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->] (./vowel_dynamics.aux)
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./harrington_poster_portriat.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 18.12pt have occurred.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 69 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 6024 strings out of 493089
- 90092 string characters out of 6134843
- 181424 words of memory out of 5000000
- 9381 multiletter control sequences out of 15000+600000
- 41579 words of font info for 84 fonts, out of 8000000 for 9000
+ 5725 strings out of 493089
+ 85307 string characters out of 6134843
+ 170245 words of memory out of 5000000
+ 9096 multiletter control sequences out of 15000+600000
+ 24872 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,28n,38p,500b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/tipa/xipasb10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/tipa/xipasi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/tipa/xipass10.pfb>
-Output written on vowel_dynamics.pdf (1 page, 1698330 bytes).
+ 38i,28n,38p,445b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on harrington_poster_portriat.pdf (1 page, 19897 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 203 compressed objects within 3 object streams
+ 42 PDF objects out of 1000 (max. 8388607)
+ 14 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
