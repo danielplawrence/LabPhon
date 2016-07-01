@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  1 JUL 2016 09:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  1 JUL 2016 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,7 +316,7 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 )
 \mylen=\skip70
 
-No file harrington_poster_portriat.aux.
+(./harrington_poster_portriat.aux)
 \openout1 = `harrington_poster_portriat.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -333,6 +333,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 56.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 56.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -469,6 +470,10 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <24.88> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 82.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <29.86> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 89.
+LaTeX Font Info:    Try loading font information for T3+phv on input line 124.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3phv.fd
+File: t3phv.fd 2001/12/31 scalable TIPA font definitions
+)
 <u_fronting_yob.pdf, id=2, 216.81pt x 216.81pt>
 File: u_fronting_yob.pdf Graphic file (type pdf)
  <use u_fronting_yob.pdf>
@@ -502,10 +507,7 @@ Overfull \hbox (182.26387pt too wide) in paragraph at lines 134--136
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for T3+phv on input line 147.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3phv.fd
-File: t3phv.fd 2001/12/31 scalable TIPA font definitions
-)
+
 Overfull \vbox (17.04724pt too high) detected at line 154
  []
 
@@ -650,12 +652,12 @@ Overfull \hbox (30.49902pt too wide) in paragraph at lines 230--232
  [] 
  []
 
-<u_perception_age_sd.pdf, id=19, 178.6675pt x 216.81pt>
+<u_perception_age_sd.pdf, id=19, 187.70125pt x 216.81pt>
 File: u_perception_age_sd.pdf Graphic file (type pdf)
 
 <use u_perception_age_sd.pdf>
 Package pdftex.def Info: u_perception_age_sd.pdf used on input line 250.
-(pdftex.def)             Requested size: 357.3341pt x 433.61893pt.
+(pdftex.def)             Requested size: 375.40158pt x 433.61893pt.
 
 <u_perception_dim3_sd.pdf, id=20, 216.81pt x 216.81pt>
 File: u_perception_dim3_sd.pdf Graphic file (type pdf)
@@ -664,16 +666,16 @@ File: u_perception_dim3_sd.pdf Graphic file (type pdf)
 Package pdftex.def Info: u_perception_dim3_sd.pdf used on input line 251.
 (pdftex.def)             Requested size: 433.61893pt x 433.61893pt.
 
-Overfull \hbox (225.61829pt too wide) in paragraph at lines 249--253
+Overfull \hbox (243.68576pt too wide) in paragraph at lines 249--253
 |  [] []
  []
 
-<o_perception_dim3_sd.pdf, id=21, 216.81pt x 216.81pt>
+<o_perception_dim3_sd.pdf, id=21, 237.88875pt x 230.8625pt>
 File: o_perception_dim3_sd.pdf Graphic file (type pdf)
 
 <use o_perception_dim3_sd.pdf>
 Package pdftex.def Info: o_perception_dim3_sd.pdf used on input line 255.
-(pdftex.def)             Requested size: 433.61893pt x 433.61893pt.
+(pdftex.def)             Requested size: 475.7763pt x 461.72385pt.
 
 Overfull \hbox (29.80016pt too wide) in paragraph at lines 261--261
 []\OT1/phv/m/n/24.88 ...quite a lot in terms of the strength/consistency
@@ -730,18 +732,18 @@ LaTeX Font Warning: Size substitutions with differences
 ### semi simple group (level 1) entered at line 69 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5725 strings out of 493089
- 85307 string characters out of 6134843
+ 5729 strings out of 493089
+ 85403 string characters out of 6134843
  170245 words of memory out of 5000000
- 9096 multiletter control sequences out of 15000+600000
- 24872 words of font info for 63 fonts, out of 8000000 for 9000
+ 9098 multiletter control sequences out of 15000+600000
+ 25802 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,28n,38p,445b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,28n,38p,455b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on harrington_poster_portriat.pdf (1 page, 19897 bytes).
+Output written on harrington_poster_portriat.pdf (1 page, 19896 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  14 compressed objects within 1 object stream

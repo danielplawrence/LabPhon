@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  1 JUL 2016 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  1 JUL 2016 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -653,7 +653,7 @@ Overfull \hbox (26.53838pt too wide) in paragraph at lines 274--288
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 303.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <17.28> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 305.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 303.
 [1
 
 
@@ -707,7 +707,7 @@ ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/tipa/xipasb10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/public/tipa/xipasi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/tipa/xipass10.pfb>
-Output written on vowel_dynamics_portrait.pdf (1 page, 1696791 bytes).
+Output written on vowel_dynamics_portrait.pdf (1 page, 1696819 bytes).
 PDF statistics:
  311 PDF objects out of 1000 (max. 8388607)
  203 compressed objects within 3 object streams

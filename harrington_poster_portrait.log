@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  1 JUL 2016 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.2)  1 JUL 2016 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -470,6 +470,10 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <24.88> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 82.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <29.86> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 89.
+LaTeX Font Info:    Try loading font information for T3+phv on input line 124.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3phv.fd
+File: t3phv.fd 2001/12/31 scalable TIPA font definitions
+)
 <u_fronting_yob.pdf, id=2, 216.81pt x 216.81pt>
 File: u_fronting_yob.pdf Graphic file (type pdf)
  <use u_fronting_yob.pdf>
@@ -511,10 +515,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 143.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14.4> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 143.
-LaTeX Font Info:    Try loading font information for T3+phv on input line 176.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3phv.fd
-File: t3phv.fd 2001/12/31 scalable TIPA font definitions
-)
+
 Overfull \vbox (35.30411pt too high) detected at line 183
  []
 
@@ -653,13 +654,10 @@ Package pdftex.def Info: o_perception_dim3_sd.pdf used on input line 288.
 Non-PDF special ignored!
 Non-PDF special ignored!{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/upd
 map/pdftex.map} <./Black_Landscape_portrait.pdf> <./u_fronting_yob.pdf> <./o_fr
-onting_yob.pdf> <./u_dip_yob.pdf> <./o_dip_soc.pdf> <./owdynamicsclassh.pdf
-
-pdfTeX warning: pdflatex (file ./owdynamicsclassh.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
-> <./M_O_MC_L_1.png> <./M_Y_MC_L_1.png> <./M_O_WC_L_1.png> <./M_Y_WC_L_1.png> <
-./M_O_MC_NL_1.png> <./M_Y_MC_NL_1.png> <./M_O_WC_NL_1.png> <./M_Y_WC_NL_1.png> 
-<./u_fronting_perception_class.pdf
+onting_yob.pdf> <./u_dip_yob.pdf> <./o_dip_soc.pdf> <./owdynamicsclassh.pdf> <.
+/M_O_MC_L_1.png> <./M_Y_MC_L_1.png> <./M_O_WC_L_1.png> <./M_Y_WC_L_1.png> <./M_
+O_MC_NL_1.png> <./M_Y_MC_NL_1.png> <./M_O_WC_NL_1.png> <./M_Y_WC_NL_1.png> <./u
+_fronting_perception_class.pdf
 
 pdfTeX warning: pdflatex (file ./u_fronting_perception_class.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
@@ -694,13 +692,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 5739 strings out of 493089
- 85577 string characters out of 6134843
+ 5741 strings out of 493089
+ 85611 string characters out of 6134843
  209245 words of memory out of 5000000
- 9099 multiletter control sequences out of 15000+600000
- 34059 words of font info for 71 fonts, out of 8000000 for 9000
+ 9101 multiletter control sequences out of 15000+600000
+ 34989 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,28n,38p,479b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,28n,38p,499b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
@@ -711,10 +709,10 @@ ive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/201
 fonts/type1/public/tipa/xipasb10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/public/tipa/xipasi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 public/tipa/xipass10.pfb>
-Output written on harrington_poster_portrait.pdf (1 page, 1935074 bytes).
+Output written on harrington_poster_portrait.pdf (1 page, 1923508 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
+ 348 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
